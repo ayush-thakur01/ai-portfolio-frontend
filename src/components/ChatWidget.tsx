@@ -38,7 +38,7 @@ const ChatWidget = ({ forceOpen }: ChatWidgetProps) => {
     setLoading(true);
 
     try {
-      const res = await axios.post("https://ai-portfolio-backend-tovu.onrender.com", {
+      const res = await axios.post("https://ai-portfolio-backend-tovu.onrender.com/chat", {
         message: input,
       });
 
